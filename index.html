@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="dashboard">
+      <header class="dashboard__header">
+        <div>
+          <p class="dashboard__eyebrow">今日の月の満ち欠け</p>
+          <h1 class="dashboard__title">Moon Phase Dashboard</h1>
+        </div>
+        <div class="dashboard__date" id="today"></div>
+      </header>
+
+      <section class="card" aria-live="polite">
+        <div class="card__icon" id="moon-icon" aria-hidden="true">🌑</div>
+        <div class="card__content">
+          <h2 class="card__title" id="moon-name">--</h2>
+          <p class="card__subtitle" id="moon-detail">--</p>
+          <p class="card__hint" id="moon-illumination">--</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
