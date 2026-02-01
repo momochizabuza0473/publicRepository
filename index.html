@@ -24,6 +24,33 @@
           <p class="card__hint" id="moon-illumination">--</p>
         </div>
       </section>
+
+      <section class="card card--stack" aria-label="Slack notification settings">
+        <div class="card__content">
+          <h2 class="card__title">Slack通知</h2>
+          <p class="card__subtitle">
+            Slack Incoming Webhook URLを保存すると、更新結果を定期的に送信します。
+          </p>
+          <form class="settings" id="slack-settings">
+            <label class="settings__field">
+              <span>Webhook URL</span>
+              <input
+                type="url"
+                id="slack-webhook"
+                name="slack-webhook"
+                placeholder="https://hooks.slack.com/services/..."
+                autocomplete="off"
+              />
+            </label>
+            <label class="settings__checkbox">
+              <input type="checkbox" id="slack-enabled" />
+              通知を有効にする
+            </label>
+            <button type="submit" class="settings__button">保存</button>
+            <p class="settings__status" id="slack-status" role="status"></p>
+          </form>
+        </div>
+      </section>
     </main>
 
     <script src="script.js"></script>
