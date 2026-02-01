@@ -64,6 +64,11 @@ body {
   align-items: center;
 }
 
+.card--stack {
+  grid-template-columns: 1fr;
+  align-items: start;
+}
+
 .card__icon {
   font-size: clamp(3.2rem, 4vw, 4.4rem);
   width: 80px;
@@ -89,6 +94,55 @@ body {
 .card__hint {
   margin: 12px 0 0;
   font-size: 0.95rem;
+  color: #64748b;
+}
+
+.settings {
+  display: grid;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.settings__field {
+  display: grid;
+  gap: 8px;
+  font-size: 0.95rem;
+  color: #475569;
+}
+
+.settings__field input {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #cbd5f5;
+  font-size: 0.95rem;
+}
+
+.settings__checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  color: #475569;
+}
+
+.settings__button {
+  justify-self: start;
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: none;
+  background: #0f172a;
+  color: #f8fafc;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.settings__button:hover {
+  background: #1f2937;
+}
+
+.settings__status {
+  margin: 0;
+  font-size: 0.9rem;
   color: #64748b;
 }
 
